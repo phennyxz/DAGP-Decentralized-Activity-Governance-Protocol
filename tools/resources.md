@@ -1,7 +1,11 @@
-# Transferência de posse e custódia — propostas abertas
+# Transferência de posse e custódia
 
-## Posse
-Registrar objeto opaco e titular, transferência e consumo como proposições governadas pela atividade. Verificar direito de transferência sem necessariamente revelar conteúdo. Transferências conflitantes não podem finalizar simultaneamente; depende de finalização segura do núcleo. Conhecimento de segredo previamente revelado não pode ser revogado por mera transferência.
+A posse é governada pela atividade, não exige ferramenta criptográfica independente. Registrar objeto opaco e titular, transferência e consumo como proposições. Transferências conflitantes não podem finalizar simultaneamente; depende de finalização segura do núcleo.
+
+## Transferência e conhecimento
+- Se A não deveria conhecer o objeto transferido a B, B consulta registros autenticados de fornecimento de chaves intermediárias. Ausência de registros não prova ausência de conluio ou acesso clandestino.
+- Se A pode continuar reconhecendo o objeto, basta transferência governada e autorização de revelação seletiva a B.
+- Se A conhecia conteúdo mas não deve reconhecer sua representação, B inicia novo embaralhamento de conjunto de objetos indistinguíveis com proteções renovadas e transformação secreta inacessível a A. Não é possível revogar conhecimento já adquirido.
 
 ## Custódia
-Considerar Shamir Secret Sharing para segredos recuperáveis mediante limiar definido pela atividade. Participantes recebem partes autenticadas por canal privado; número suficiente de partes permite reconstrução, inclusive em caso de conluio. SSS sozinho não garante validade das partes nem autorização de abertura; avaliar VSS, custódia e recuperação seletiva. Aplicações potenciais: continuidade do embaralhamento e sombra agendada. Não é mecanismo ratificado.
+Camadas de embaralhamento constituem custódia distribuída. Para indisponibilidade de titular de segredo, utilizar [LDV](layered-distributed-vault.md), com cofre criptografado e chaves separados entre guardiões. Recuperação por limiar (SSS/VSS) é extensão futura opcional, não requisito básico.
