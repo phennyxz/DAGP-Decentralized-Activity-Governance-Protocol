@@ -15,5 +15,6 @@ DAGP coordinates autonomous peers without requiring a central governing authorit
 - [Cryptographic toolkit](tools/README.md)
 - [Security model and open questions](SECURITY.md)
 - [Roadmap and reference activities](ROADMAP.md)
+- [Experimental validation suite](validation/README.md)
 
 The initial documentation is in Portuguese; the project name and identifiers are in English. No implementation or interoperability guarantees yet. License selection is pending.
